@@ -1,22 +1,23 @@
 import React from "react";
+import TimeSheet from "./components/TimeSheet";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>How many hours do you need to work?</h1>
+      <div class="ui mini focus input">
+        <input type="number" placeholder="Hours..." />
+      </div>
+      <h1>When did you clock in?</h1>
+      <div class="ui mini focus input">
+        <input type="time" placeholder="Clock In..." />
+      </div>
+      <h1>When did you clock in?</h1>
+      <div class="ui mini focus input">
+        <input type="time" placeholder="Clock In..." />
+      </div>
+      <TimeSheet />
     </div>
   );
 }
